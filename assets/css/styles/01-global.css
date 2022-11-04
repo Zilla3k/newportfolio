@@ -57,4 +57,5 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
+  color: var(--cor-texto);
 }
