@@ -1,0 +1,60 @@
+:root {
+  --cor-primaria: #7562e0;
+  --cor-background: #1a1a29;
+  --cor-barraBackground: #181824;
+  --cor-texto: #fff;
+}
+
+body {
+  font-family: "Poppins",Arial;
+  margin: 0px;
+  background-color: var(--cor-background);
+}
+
+.grid-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* Resets */
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+.subtitle {
+  font-size: 2rem;
+  line-height: 48px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+}
+
+.body-text{
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
