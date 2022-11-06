@@ -1,0 +1,172 @@
+.formation {
+  color: #ffffff;
+  position: relative;
+}
+.formation .subtitle {
+  color: var(--cor-primaria);
+}
+.body-text {
+  grid-column: 1/-1;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+}
+/*   Formation Container  */
+.formation-container{
+  grid-column: 1/-1;
+}
+.formation-flex{
+  background: #32324f;
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.formation-institucion {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+.formation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.formation-list li {
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 20px;
+}
+.formation-type {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+.formation-course {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+.formation-course::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: var(--cor-primaria);
+  position: absolute;
+  left: -24px;
+}
+/*  Formation Extra */
+.formation-extra{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.certificates {
+  margin-bottom: 60px;
+  margin-right: 60px;
+  grid-column: 1;
+}
+.certificates h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.certificates-title::before {
+  display: block;
+  content: "";
+  width: 29px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+.certificates-title.certificate::before {
+  background: url("../../img/icons/formation/certificate.svg");
+}
+.certificates li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.certificates span {
+  color: #8f8f8f;
+}
+.certificates a {
+  color: #fff;
+}
+.certificates li {
+  display: flex;
+  justify-content: space-between;
+}
+.languages {
+  margin-bottom: 60px;
+  grid-column: 2;
+}
+.certificates-title{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.certificates-title::before {
+  display: block;
+  content: "";
+  width: 29px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+.certificates-title.language::before {
+  background: url("../../img/icons/formation/languages.svg");
+}
+.languages li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.languages span {
+  color: #8f8f8f;
+}
+.languages a {
+  color: #fff;
+}
+.languages li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 810px) {
+  .formation-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formation .subtitle {
+    color: #ffffff;
+  }
+  .body-text {
+    font-size: 1.25rem;
+  }
+  .formation-extra{
+    grid-template-columns: 1fr;
+  }
+  .certificates-title::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .certificates {
+    grid-column: 1/-1;
+  }
+  .languages {
+    grid-column: 1/-1;
+  } 
+}
