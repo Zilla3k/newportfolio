@@ -1,0 +1,41 @@
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  gap: 40px;
+}
+.contact-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  color: var(--cor-texto);
+}
+.contact-data{
+  grid-column: 2;
+}
+.contact-data li {
+  font-weight: bold;
+  font-size: 1.175rem;
+  line-height: 1.1;
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+.contact-copy {
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+  .contact-text{
+    max-width: max-content;
+  }
+  .contact-text, .contact-data {
+   grid-column: 1/-1;
+   text-align: center;
+  }
+  .contact-data li {
+    font-size: 1.25rem;
+  }
+}
