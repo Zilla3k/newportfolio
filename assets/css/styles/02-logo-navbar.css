@@ -20,12 +20,11 @@
 
 .header-menu a {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 27px;
   font-size: 1.125rem;
   color: var(--cor-texto);
   position: relative;
-
 }
 
 .header-menu a:hover {
@@ -55,13 +54,16 @@
     gap: 40px;
     padding: 20px;
   }
-  .header li a {
-    padding: 10px;
-  }
+  
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .logo img {
     width: 300px;
+  }
+  .header-menu a {
+    font-size:0.875rem ;}
+  .header li a {
+      padding: 0;
   }
 }
