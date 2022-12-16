@@ -39,3 +39,21 @@
     font-size: 1.25rem;
   }
 }
+
+
+@media (max-width: 320px) {
+  .contact-text {
+  font-size: 1.25rem;
+  }
+  .contact-data li{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .contact-text {
+    font-size: 1rem;
+    }
+    .contact-data li{
+      font-size: .875rem;
+    }
+}
