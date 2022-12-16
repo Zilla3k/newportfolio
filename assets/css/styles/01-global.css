@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins",Arial;
+  font-family: 'Comic Sans MS', 'Poppins', Arial;
   margin: 0px;
   background-color: var(--cor-background);
 }
@@ -28,7 +28,7 @@ p {
   margin: 0px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -52,7 +52,7 @@ img {
   color: var(--cor-primaria);
 }
 
-.body-text{
+.body-text {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
